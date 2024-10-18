@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Section</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #333;
+  }
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+}
+
+/* Additional CSS for Skills Section */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.skills-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.skills-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.skills-section .card-body {
+  padding: 15px;
+}
+.skills-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.skills-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.skills-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+
+
+
+/* Common Styles for Card */
+.card {
+  height: 100%; /* Ensure all cards take full height of the column */
+  display: flex;
+  flex-direction: column; /* Arrange contents vertically */
+}
+
+/* Ensure card body grows to fill space */
+.card-body {
+  flex-grow: 1; /* Allow body to expand to fill card */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center align text vertically */
+}
+
+/* Optional: Equal height for images */
+.card-img-top {
+  object-fit: cover; /* Maintain aspect ratio, fill the card */
+  height: 200px; /* Set a fixed height for uniformity */
+}
+
+
+</style>
+
+</head>
+<body>
+
+<section id='about' class="about-section">
+  <div class="container">
+    <h2>About</h2>
+    <img src="images/about/1.jpg" alt="About Me">
+    <p>Data Scientist with 3 years of experience in AI and machine learning, including 1 year and 8 months in data science and machine learning, and 1 year and 4 months specializing in Generative AI. I started my career as a Machine Learning Engineer, where I developed and deployed innovative solutions to real-world challenges. I utilize advanced Generative AI models, applying them directly for impactful results while fine-tuning them as needed to enhance performance. I am passionate about leveraging AI to address complex problems and committed to continuous learning and driving technological innovation.</p>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Automated Predictive Maintenance Pipeline for Air Pressure System (APS) - Sensor Fault Detection</h5>
+            <p class="card-text">Collaborated with a team to build a fully automated pipeline for predicting failures in heavy-duty vehicle APS, aiming to reduce repair costs and improve uptime.</p>
+            <p><strong>Challenge:</strong> Addressed a binary classification problem to differentiate between APS component failures and other vehicle issues, focusing on minimizing false positives.</p>
+            <p><strong>Solution:</strong></p>
+            <ul>
+              <li>Developed a data ingestion process using Apache Kafka to stream real-time sensor data to MongoDB.</li>
+              <li>Implemented data validation and transformation to ensure data quality for analysis.</li>
+              <li>Designed and trained machine learning models (Random Forest, XGBoost) for accurate predictions.</li>
+              <li>Established a model evaluation process using precision, recall, and F1-score metrics.</li>
+              <li>Created a model pusher for automated deployment on EC2.</li>
+              <li>Containerized the pipeline with Docker for scalable deployment across various environments.</li>
+            </ul>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-primary">Blog Post</a>
+              <a href="https://github.com/ManideepMuddagowni/Sensor-Fault-Detection?tab=readme-ov-file" class="btn btn-secondary">Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Automated Predictive Maintenance Pipeline for Air Pressure System (APS) - Sensor Fault Detection</h5>
+            <p class="card-text">Collaborated with a team to build a fully automated pipeline for predicting failures in heavy-duty vehicle APS, aiming to reduce repair costs and improve uptime.</p>
+            <p><strong>Challenge:</strong> Addressed a binary classification problem to differentiate between APS component failures and other vehicle issues, focusing on minimizing false positives.</p>
+            <p><strong>Solution:</strong></p>
+            <ul>
+              <li>Developed a data ingestion process using Apache Kafka to stream real-time sensor data to MongoDB.</li>
+              <li>Implemented data validation and transformation to ensure data quality for analysis.</li>
+              <li>Designed and trained machine learning models (Random Forest, XGBoost) for accurate predictions.</li>
+              <li>Established a model evaluation process using precision, recall, and F1-score metrics.</li>
+              <li>Created a model pusher for automated deployment on EC2.</li>
+              <li>Containerized the pipeline with Docker for scalable deployment across various environments.</li>
+            </ul>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-primary">Blog Post</a>
+              <a href="https://github.com/ManideepMuddagowni/Sensor-Fault-Detection?tab=readme-ov-file" class="btn btn-secondary">Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Automated Predictive Maintenance Pipeline for Air Pressure System (APS) - Sensor Fault Detection</h5>
+            <p class="card-text">Collaborated with a team to build a fully automated pipeline for predicting failures in heavy-duty vehicle APS, aiming to reduce repair costs and improve uptime.</p>
+            <p><strong>Challenge:</strong> Addressed a binary classification problem to differentiate between APS component failures and other vehicle issues, focusing on minimizing false positives.</p>
+            <p><strong>Solution:</strong></p>
+            <ul>
+              <li>Developed a data ingestion process using Apache Kafka to stream real-time sensor data to MongoDB.</li>
+              <li>Implemented data validation and transformation to ensure data quality for analysis.</li>
+              <li>Designed and trained machine learning models (Random Forest, XGBoost) for accurate predictions.</li>
+              <li>Established a model evaluation process using precision, recall, and F1-score metrics.</li>
+              <li>Created a model pusher for automated deployment on EC2.</li>
+              <li>Containerized the pipeline with Docker for scalable deployment across various environments.</li>
+            </ul>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-primary">Blog Post</a>
+              <a href="https://github.com/ManideepMuddagowni/Sensor-Fault-Detection?tab=readme-ov-file" class="btn btn-secondary">Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section bg-white" id="skills">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
+    <div class="row">
+      <!-- Skill 1: Programming & Data Analysis -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/programming.jpg" class="card-img-top" alt="Programming & Data Analysis">
+          <div class="card-body">
+            <h5 class="card-title">Programming & Data Analysis</h5>
+            <p class="card-text">Python (Pandas, Numpy, Pyspark, Tensorflow)</p>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 2: Database -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/DB.jpg" class="card-img-top" alt="Database">
+          <div class="card-body">
+            <h5 class="card-title">Database</h5>
+            <p class="card-text">MongoDB, SQL</p>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 3: Statistics -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/statistic.jpg" class="card-img-top" alt="Statistics">
+          <div class="card-body">
+            <h5 class="card-title">Statistics</h5>
+            <p class="card-text">Descriptive & Inferential Statistics, Sampling Methods, Correlation, ANOVA</p>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 4: Data Analytics & Visualization -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/4.jpg" class="card-img-top" alt="Data Analytics & Visualization">
+          <div class="card-body">
+            <h5 class="card-title">Data Analytics & Visualization</h5>
+            <p class="card-text">Power BI, Matplotlib, Seaborn</p>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 5: Machine Learning & AI -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/5.jpg" class="card-img-top" alt="Machine Learning & AI">
+          <div class="card-body">
+            <h5 class="card-title">Machine Learning & AI</h5>
+            <p class="card-text">Machine Learning, Deep Learning, NLP, Generative AI, LLM</p>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 6: Web Frameworks & Deployment -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/web_frameworks.png" class="card-img-top" alt="Web Frameworks & Deployment">
+          <div class="card-body">
+            <h5 class="card-title">Web Frameworks & Deployment</h5>
+            <p class="card-text">Streamlit, Gradio, FastAPI</p>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 7: Cloud & DevOps -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/cloud_devops.png" class="card-img-top" alt="Cloud & DevOps">
+          <div class="card-body">
+            <h5 class="card-title">Cloud & DevOps</h5>
+            <p class="card-text">AWS (Bedrock, EC2, S3), Azure DevOps, CI/CD</p>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 8: Version Control -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/version_control.png" class="card-img-top" alt="Version Control">
+          <div class="card-body">
+            <h5 class="card-title">Version Control</h5>
+            <p class="card-text">GIT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="certifications-section bg-light">
+  <div class="container">
+    <h2 class="text-center">Certifications</h2>
+    <div class="row">
+      <!-- Certification 1 -->
+      <div class="col-lg-6 mb-4">
+        <div class="card">
+          <img src="images/certificate/Udemy.jpg" class="card-img-top" alt="Complete MLOps Bootcamp" />
+          <div class="card-body">
+            <h5 class="card-title">Complete MLOps Bootcamp With 10+ End To End ML and LLM Projects</h5>
+            <p class="card-text"><strong>Provider:</strong> Udemy<br>
+              <strong>Status:</strong> Currently Doing</p>
+            <a href="https://www.udemy.com/course/mlops-bootcamp/" class="btn btn-primary" target="_blank">View Certification</a>
+          </div>
+        </div>
+      </div>
+      <!-- Certification 2 -->
+      <div class="col-lg-6 mb-4">
+        <div class="card">
+          <img src="images/certificate/ineuron.jpg" class="card-img-top" alt="Machine Learning Certification" />
+          <div class="card-body">
+            <h5 class="card-title">Machine Learning, Deep Learning and NLP Certification</h5>
+            <p class="card-text"><strong>Provider:</strong> iNeuron.ai<br>
+              <strong>Duration:</strong> 06/2020 - 03/2021</p>
+            <a href="https://ineuron.ai/courses/machine-learning" class="btn btn-primary" target="_blank">View Certification</a>
+          </div>
+        </div>
+      </div>
+      <!-- Certification 3 -->
+      <div class="col-lg-6 mb-4">
+        <div class="card">
+          <img src="images/certificate/IBM.jpg" class="card-img-top" alt="IBM Data Science Certification" />
+          <div class="card-body">
+            <h5 class="card-title">IBM Data Science Professional Certification</h5>
+            <p class="card-text"><strong>Provider:</strong> Coursera<br>
+              <strong>Duration:</strong> 04/2020 - 06/2020</p>
+            <a href="https://github.com/ManideepMuddagowni/IBM-DataScience-certification" class="btn btn-primary" target="_blank">View Certification</a>
+          </div>
+        </div>
+      </div>
+      <!-- Certification 4 -->
+      <div class="col-lg-6 mb-4">
+        <div class="card">
+          <img src="images/certificate/Udemy.jpg" class="card-img-top" alt="Python Bootcamp" />
+          <div class="card-body">
+            <h5 class="card-title">Python Bootcamp</h5>
+            <p class="card-text"><strong>Provider:</strong> Udemy<br>
+              <strong>Duration:</strong> 11/2019 - 02/2020</p>
+            <a href="https://www.udemy.com/certificate/UC-4f685e83-b656-4e9a-ab15-3b154123b9b2/" class="btn btn-primary" target="_blank">View Certification</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <p><i class="fas fa-envelope"></i> muddagownimanideep96@gmail.com</p>
+      </div>
+      <div class="col-lg-6">
+        <p><i class="fas fa-phone"></i> +44 7366484846</p>
+      </div>
+    </div>
+    <div class="row justify-content-center"> <!-- Center the row -->
+      <div class="col-lg-2 col-md-4 mb-4 text-center"> <!-- Centering the icon -->
+        <a href="https://linkedin.com/in/yourusername" target="_blank">
+          <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon">
+          LinkedIn
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4 text-center"> <!-- Centering the icon -->
+        <a href="https://github.com/ManideepMuddagowni" target="_blank">
+          <img src="icons/github.png" alt="GitHub" class="social-icon">
+          GitHub
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4 text-center"> <!-- Centering the icon -->
+        <a href="https://muddagownimanideep-g.medium.com/" target="_blank">
+          <img src="icons/medium.png" alt="Medium" class="social-icon">
+          Medium
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#certifications">Certification</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
