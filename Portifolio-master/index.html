@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <title>Manideep Muddagowni</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      /* Reduce gap between sections */
+      #home-section,
+      #about-section {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      /* Targeting <section> elements directly to remove excess spacing */
+      section {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
+
+      /* Target container padding */
+      .container {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+      }
+
+      /* Additional styling for specific spacing in hero and about sections */
+      .about-mf .box-shadow-full {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+      }
+
+      .about-mf .about-img {
+        margin-bottom: 0.5rem !important;
+      }
+
+      /* Further adjust skill bar margin to reduce height */
+      .skill-mf .progress {
+        margin: 0.25rem 0 !important;
+      }
+
+      /* Header and Footer adjustments */
+      header, footer {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      /* Global margin and padding reset to address potential spacing issues */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Manideep Muddagowni</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+            <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+            <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+            <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home-section" class="hero">
+      <div class="home-slider owl-carousel">
+        <div class="slider-item">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row d-md-flex no-gutters slider-text align-items- justify-content-lg-end" data-scrollax-parent="true">
+              <div>
+                <div class="overlay"></div>
+              </div>
+              <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <img src="https://cdn.dribbble.com/users/176039/screenshots/9022929/media/b21392d51355d99c7b82a5fedf2c4f85.gif" alt="Profile Image" class="img-fluid" style="max-width: 90%; height: auto;">
+              </div>
+
+              <div class="one-forth d-flex align-items-lg-start justify-content-lg-start ftco-animate" data-scrollax="properties: { translateY: '90%' }">
+                <div class="text text-center">
+                  <span class="subheading">Hello!</span>
+                  <h1 class="mb-8 mt-8">I'm <span>Manideep Muddagowni</span></h1>
+
+                  <!-- Element to contain animated typing -->
+                  <span id="typing-animation"></span>
+
+                  <script>
+                    // Initialize the typing animation
+                    const typingAnimationElement = document.getElementById('typing-animation');
+
+                    // Create an array of typing text
+                    const typingTexts = [
+                      'Data Scientist',
+                      'Machine Learning Engineer',
+                      'AI/ML Engineer',
+                    ];
+
+                    // Create a function to display the typing animation for a given text
+                    function playTypingAnimation(text) {
+                      // Loop through each character and add it to the element
+                      for (let i = 0; i < text.length; i++) {
+                        setTimeout(() => {
+                          typingAnimationElement.textContent += text[i];
+                        }, i * 200); // Increase the delay to slow down the typing animation
+                      }
+
+                      // Once the animation is complete, reset the text and start over
+                      setTimeout(() => {
+                        typingAnimationElement.textContent = '';
+                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                      }, text.length * 200 + 1000); // Add delay before starting next text
+                    }
+
+                    // Start the typing animation loop
+                    playTypingAnimation(typingTexts[0]);
+                  </script>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="row d-flex align-items-stretch">
+            <div class="col-md-25 col-lg-12 d-flex">
+              <div class="img-about img d-flex align-items-stretch">
+                <div class="overlay">
+                  <div class="row">
+                    <div class="col-sm-25 col-md-12">
+                      <div class="about-img">
+                        <img src="#" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-md-25 col-lg-25 pl-lg-12 pb-25">
+                      <div class="row justify-content-start pb-25">
+                        <div class="col-md-25 heading-section ftco-animate">
+                          <h2 class="mb-25">About Me</h2>
+                          <p>
+                            Data Scientist with 3 years of experience in machine learning, NLP and Generative AI, delivering impactful solutions across e-commerce, healthcare, and insurance. 
+                            I began my career as a Machine Learning Engineer, focusing on deploying and fine-tuning advanced AI solutions to solve real-world challenges and enhance efficiency. 
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
+
+    </section>
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+        </div>
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+			<div class="col-md-22-text-centre">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">2022-Present</span>
+					<h2>Data Scientist</h2>
+					<span class="position">Versatile Commerce </span>
+					
+				</div>
+
+			</div>
+
+		</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Certifications</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">Currently Doing</span>
+    					<h2>Complete MLOps Bootcamp With 10+ End To End ML and LLM Projects</h2>  
+    					<p class="mt-4">Provider: Udemy</p>
+						<a href="https://www.udemy.com/course/complete-mlops-bootcamp-with-10-end-to-end-ml-projects/?couponCode=ST7MT110524" class="btn btn-primary" target="_blank">Currently Doing</a>
+    				</div>
+				</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">06/2020 - 03/2021</span>
+    					<h2>Machine Learning, Deep Learning and NLP Certification</h2>
+    					<p class="mt-4">Provider: iNeuron.ai </p>
+						<a href="https://ineuron.ai/courses/machine-learning" class="btn btn-primary" target="_blank">View Certification</a>
+    				</div>
+    			</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">04/2020 - 06/2020</span>
+    					<h2>IBM Data Science Professional Certification</h2>
+    					<p class="mt-4">Provider: Coursera</p>
+						<a href="https://github.com/ManideepMuddagowni/IBM-DataScience-certification" class="btn btn-primary" target="_blank">View Certification</a>
+    				</div>
+    			</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">11/2019 - 02/2020</span>
+    					<h2>Complete Python Bootcamp in Python</h2>
+    					<p class="mt-4">Provider: Udemy</p>
+						<a href="https://www.udemy.com/certificate/UC-4f685e83-b656-4e9a-ab15-3b154123b9b2/" class="btn btn-primary" target="_blank">View Certification</a>
+    				</div>
+    			</div>
+    		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<section class="ftco-section ftco-no-pb" id="resume-section">
+				<div class="container">
+					<div class="row justify-content-center pb-5">
+				</div>
+				<div class="row">
+					<h1 class="big-4">Projects</h1>
+					<div class="underline"></div>
+				</div>
+				<br>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ">
+
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/ManideepMuddagowni/Sensor-Fault-Detection/tree/master" class="block-20 zoom-effect" style="background-image: url('images/Sensor Fault Detection.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/ManideepMuddagowni/Sensor-Fault-Detection/tree/master">Automated Predictive Maintenance Pipeline for Air Pressure System (APS) - Sensor Fault Detection</a></h3>
+                <p>Collaborated to build an automated pipeline predicting failures in heavy-duty vehicle APS, analyzing 400000 data points to distinguish APS component failures from other vehicle issues while minimizing false positives. </p>
+				<p>Developed a data ingestion process using Apache Kafka to stream real-time sensor data to MongoDB, implementing data validation and transformation for quality assurance. </p>
+				<p>Designed and trained machine learning models (Random Forest, XGBoost) for accurate predictions, establishing evaluation metrics including precision, recall, and F1-score. </p>
+				<p>Created a model pusher for automated deployment on EC2 and containerized the pipeline with Docker for scalable deployment across multiple environments. </p>
+					
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/ayushi-mahariye/Drowsiness-detection-system" class="block-20 zoom-effect" style="background-image: url('images/images.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/ayushi-mahariye/Drowsiness-detection-system">Drowsiness detection System Using Machine Learning</a></h3>
+                <p>Developed a machine learning-based system to
+					detect driver drowsiness in real-time, aimed at
+					enhancing road safety by preventing accidents
+					caused by fatigue</p>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="underline"></div>
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Current Location</h3>
+	            <p>Milton Keynes, United Kingdom</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:muddagownimanideep96@gmail.com">contactme.com</a></p>
+	          </div>
+          </div>
+		  <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+			<div class="align-self-stretch box p-4 text-center">
+				<div class="icon d-flex align-items-center justify-content-center">
+					<span class="icon-github"></span>
+				</div>
+				<h3 class="mb-4">Github</h3>
+			  <p><a href="https://github.com/ManideepMuddagowni">github.com</a></p>
+			</div>
+		</div>
+		<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+			<div class="align-self-stretch box p-4 text-center">
+				<div class="icon d-flex align-items-center justify-content-center">
+					<span class="icon-linkedin"></span>
+				</div>
+				<h3 class="mb-4">Linkedin</h3>
+			  <p><a href="https://www.linkedin.com/in/manideepmuddagowni/">linkedin.com</a></p>
+			</div>
+		</div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+			</div>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+		<div class="container">
+		  <div class="row">
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
